@@ -1,0 +1,22 @@
+#Betriebssystem auf den neuesten Stand bringen
+sudo apt-get update
+
+#Sicherstellen das alle Python Bibliotheken geladen sind
+sudo apt-get install python-dev
+sudo apt-get install python-rpi.gpio
+
+#Falls Fehlermeldung beim Python Bibiliothek installieren alternativer Weg über Pip
+sudo apt-get install python-pip
+sudo pip install rp.gpio
+
+#Neue Python Datei mit dem Editor nano anlegen
+sudo nano /home/pi/shutdown.py
+
+#Dem Script die Ausführungsrechte geben
+sudo chmod +x /home/pi/shutdown.py
+
+#Das Script beim Starten des Pi ausführen lassen, in dem man rc.local öffnet
+sudo nano /etc/rc.local
+
+#Und dann VOR der Zeile exit 0 folgendes eingibt
+sudo python /home/pu/shutdown.py &
