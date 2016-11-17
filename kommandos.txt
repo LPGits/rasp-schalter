@@ -1,11 +1,11 @@
 #Betriebssystem auf den neuesten Stand bringen
 sudo apt-get update
 
-#Sicherstellen das alle Python Bibliotheken geladen sind
+#Sicherstellen, dass alle Python Bibliotheken geladen sind
 sudo apt-get install python-dev
 sudo apt-get install python-rpi.gpio
 
-#Falls Fehlermeldung beim Python Bibiliothek installieren alternativer Weg über Pip
+#Falls Fehlermeldung beim Installieren der Python Bibiliothek, ein alternativer Weg über Pip
 sudo apt-get install python-pip
 sudo pip install rp.gpio
 
