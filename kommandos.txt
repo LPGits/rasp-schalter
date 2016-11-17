@@ -19,4 +19,4 @@ sudo chmod +x /home/pi/shutdown.py
 sudo nano /etc/rc.local
 
 #Und dann VOR der Zeile exit 0 folgendes eingibt
-sudo python /home/pu/shutdown.py &
+sudo python /home/pi/shutdown.py &
